@@ -239,7 +239,7 @@ def generate_daily_report(dir_path: Path, out_dir: Path = Path('reports'), wind_
 	out_csv = out_dir / 'connection_report.csv'
 	import csv
 	fieldnames = ['Name', 'Connection', 'Remark']
-	with out_csv.open('w', newline='', encoding='utf-8') as fh:
+	with out_csv.open('w', newline='', encoding='utf-8-sig') as fh:
 		writer = csv.DictWriter(fh, fieldnames=fieldnames)
 		writer.writeheader()
 		for r in rows:

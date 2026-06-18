@@ -102,6 +102,8 @@ After running the main script, the report will be created here:
 reports\connection_report.csv
 ```
 
+The report is written with a UTF-8 BOM so Excel on Windows opens Thai text correctly.
+
 ## Notes
 
 - If a target .csv file already exists, the script will skip that file.
